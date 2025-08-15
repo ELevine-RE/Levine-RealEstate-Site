@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "listing_overlays",
+  "info": {
+    "singularName": "listing-overlay",
+    "pluralName": "listing-overlays",
+    "displayName": "Listing Overlay",
+    "description": "Editorial enhancements for MLS listings"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "listingKey": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "priorityScore": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 100
+    }
+  }
+}

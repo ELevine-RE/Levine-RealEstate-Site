@@ -1,0 +1,96 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mls_listings",
+  "info": {
+    "singularName": "mls-listing",
+    "pluralName": "mls-listings",
+    "displayName": "MLS Listing",
+    "description": "RESO-compliant MLS listing data (read-only)"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "ListingKey": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "MLSNumber": {
+      "type": "string",
+      "unique": true
+    },
+    "StandardStatus": {
+      "type": "enumeration",
+      "enum": ["Active", "Pending", "Closed", "ComingSoon", "Withdrawn", "Expired", "Canceled"],
+      "required": true
+    },
+    "PropertyType": {
+      "type": "enumeration", 
+      "enum": ["Residential", "Land", "Commercial", "Rental", "Lease", "FractionalInterest", "ResidentialLease", "CommercialLease"],
+      "required": true
+    },
+    "ListPrice": {
+      "type": "decimal",
+      "min": 0,
+      "required": true
+    },
+    "BedroomsTotal": {
+      "type": "integer",
+      "min": 0,
+      "max": 50
+    },
+    "BathroomsTotalInteger": {
+      "type": "integer",
+      "min": 0,
+      "max": 50
+    },
+    "LivingArea": {
+      "type": "integer",
+      "min": 0
+    },
+    "YearBuilt": {
+      "type": "integer",
+      "min": 1800,
+      "max": 2030
+    },
+    "UnparsedAddress": {
+      "type": "string",
+      "required": true
+    },
+    "City": {
+      "type": "string",
+      "required": true
+    },
+    "StateOrProvince": {
+      "type": "string",
+      "required": true,
+      "maxLength": 2
+    },
+    "PostalCode": {
+      "type": "string",
+      "required": true
+    },
+    "Latitude": {
+      "type": "decimal",
+      "min": -90,
+      "max": 90
+    },
+    "Longitude": {
+      "type": "decimal",
+      "min": -180,
+      "max": 180
+    },
+    "ListDate": {
+      "type": "date",
+      "required": true
+    },
+    "ModificationTimestamp": {
+      "type": "datetime",
+      "required": true
+    },
+    "PublicRemarks": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "groups",
+  "info": {
+    "singularName": "group",
+    "pluralName": "groups",
+    "displayName": "Group",
+    "description": "Top-level content groups for polyhierarchy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["geographic", "lifestyle", "amenity", "program", "marketing"],
+      "required": true,
+      "default": "geographic"
+    },
+    "summary": {
+      "type": "text",
+      "maxLength": 500
+    }
+  }
+}
