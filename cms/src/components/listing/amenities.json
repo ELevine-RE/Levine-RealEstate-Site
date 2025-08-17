@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_listing_amenities",
+  "info": {
+    "displayName": "Amenities",
+    "description": "Property amenities and features"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "interior",
+        "exterior",
+        "kitchen",
+        "bathroom",
+        "outdoor",
+        "security",
+        "entertainment",
+        "other"
+      ]
+    }
+  }
+}

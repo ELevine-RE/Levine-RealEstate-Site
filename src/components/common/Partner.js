@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { getSafeImageSrc } from "@/utils/imageUtils";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -42,8 +43,8 @@ const Partner = () => {
                   height={24}
                   style={{ objectFit: "contain" }}
                   className="wa m-auto"
-                  src={`/images/partners/${imageName}`}
-                  alt={imageName}
+                  src={getSafeImageSrc(`/images/partners/${imageName}`, 'icon')}
+                  alt={`Partner ${imageName}`}
                 />
               </div>
             </div>

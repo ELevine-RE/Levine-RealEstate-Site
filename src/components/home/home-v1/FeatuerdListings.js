@@ -2,6 +2,7 @@
 import listings from "@/data/listings";
 import Image from "next/image";
 import Link from "next/link";
+import { getSafeImageSrc } from "@/utils/imageUtils";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -44,8 +45,8 @@ const FeaturedListings = () => {
                     width={382}
                     height={248}
                     className="w-100 h-100 cover"
-                    src={listing.image}
-                    alt="listings"
+                    src={getSafeImageSrc(listing.image, 'listing')}
+                    alt={listing.title || 'listing'}
                   />
                   <div className="sale-sticker-wrap">
                     {!listing.forRent && (

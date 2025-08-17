@@ -28,10 +28,10 @@ const MobileMenu = () => {
               </a>
               <Link className="mobile_logo" href="/">
                 <Image
-                  width={160}
-                  height={50}
-                  src="/images/elr-logo-main.png"
-                  alt="Evan Levine Real Estate"
+                  width={138}
+                  height={44}
+                  src="/images/header-logo2.svg"
+                  alt="logo"
                 />
               </Link>
               <Link href="/login">
@@ -59,7 +59,7 @@ const MobileMenu = () => {
             >
               <span className="far fa-times"></span>
             </div>
-            <h4 className="title">Evan Levine Real Estate</h4>
+            <h4 className="title">Welcome to Homez</h4>
           </div>
           {/* End header */}
 

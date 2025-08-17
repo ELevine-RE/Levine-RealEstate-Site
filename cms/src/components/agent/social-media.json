@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_agent_social_medias",
+  "info": {
+    "displayName": "Social Media",
+    "description": "Agent social media links"
+  },
+  "options": {},
+  "attributes": {
+    "facebook": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    }
+  }
+}

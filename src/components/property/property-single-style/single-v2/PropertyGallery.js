@@ -2,7 +2,8 @@
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
 import Image from "next/image";
-import listings from "@/data/listings";
+import listings from "../../../../data/listings";
+import { getSafeImageSrc } from "../../../../utils/imageUtils";
 
 const images = [
   {
@@ -24,14 +25,14 @@ const PropertyGallery = ({id}) => {
           <div className="sp-img-content mb15-md">
             <div className="popup-img preview-img-1 sp-img">
               <Item
-                original={'/images/listings/listing-single-8.jpg'}
-                thumbnail={'/images/listings/listing-single-8.jpg'}
+                original={getSafeImageSrc('/images/listings/listing-single-8.jpg', 'listing')}
+                thumbnail={getSafeImageSrc('/images/listings/listing-single-8.jpg', 'listing')}
                 width={890}
                 height={510}
               >
                 {({ ref, open }) => (
                   <Image
-                    src={'/images/listings/listing-single-8.jpg'}
+                    src={getSafeImageSrc('/images/listings/listing-single-8.jpg', 'listing')}
                     width={890}
                     height={510}
                     ref={ref}
@@ -56,8 +57,8 @@ const PropertyGallery = ({id}) => {
                     className={`popup-img preview-img-${index + 2} sp-img mb10`}
                   >
                     <Item
-                      original={image.src}
-                      thumbnail={image.src}
+                      original={getSafeImageSrc(image.src, 'listing')}
+                      thumbnail={getSafeImageSrc(image.src, 'listing')}
                       width={270}
                       height={250}
                     >
@@ -69,8 +70,8 @@ const PropertyGallery = ({id}) => {
                           ref={ref}
                           onClick={open}
                           role="button"
-                          src={image.src}
-                          alt={image.alt}
+                          src={getSafeImageSrc(image.src, 'listing')}
+                          alt={image.alt || 'Gallery image'}
                         />
                       )}
                     </Item>

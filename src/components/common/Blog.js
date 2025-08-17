@@ -1,7 +1,7 @@
-
 import { blogs } from "@/data/blogs";
 import Image from "next/image";
 import Link from "next/link";
+import { getSafeImageSrc } from "@/utils/imageUtils";
 
 const Blog = () => {
   return (
@@ -14,8 +14,8 @@ const Blog = () => {
                 width={386}
                 height={271}
                 className="w-100 h-100 cover"
-                src={blog.image}
-                alt="blog"
+                src={getSafeImageSrc(blog.image, 'blog')}
+                alt={blog.title || 'blog'}
               />
             </div>
             <div className="blog-content">
