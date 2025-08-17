@@ -8,6 +8,9 @@ import "rc-slider/assets/index.css";
 import { DM_Sans, Poppins } from "next/font/google";
 import { useEffect } from "react";
 
+// Import Builder.io registry
+import "../../builder-registry";
+
 // DM_Sans font
 const dmSans = DM_Sans({
   subsets: ["latin"],
