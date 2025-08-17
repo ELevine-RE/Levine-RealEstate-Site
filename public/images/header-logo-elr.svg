@@ -1,0 +1,16 @@
+<svg width="180" height="44" viewBox="0 0 180 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- EL Monogram -->
+<g id="el-monogram">
+  <rect x="0" y="0" width="44" height="44" rx="6" fill="#63765b"/>
+  <!-- Letter E -->
+  <path d="M10 12h18v4h-13v6h11v4h-11v8h13v4H10V12z" fill="#f2f1ee"/>
+  <!-- Letter L -->
+  <path d="M32 12v22h12v4H28V12h4z" fill="#f2f1ee"/>
+</g>
+
+<!-- Company Name -->
+<g id="company-text">
+  <text x="54" y="18" font-family="Poppins" font-size="14" font-weight="600" fill="#63765b">Evan Levine</text>
+  <text x="54" y="32" font-family="Poppins" font-size="12" font-weight="400" fill="#99a78f">Real Estate</text>
+</g>
+</svg>
