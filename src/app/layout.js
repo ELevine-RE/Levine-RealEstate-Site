@@ -6,20 +6,22 @@ import "../../builder-registry";
 import "aos/dist/aos.css";
 import "../../public/scss/main.scss";
 import "rc-slider/assets/index.css";
-import { DM_Sans, Poppins } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import { useEffect } from "react";
 
-// DM_Sans font
-const dmSans = DM_Sans({
+// Metadata is handled in individual page files since this is a client component
+
+// Inter font for body text (ELR Brand)
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["300", "400", "500"],
   variable: "--body-font-family",
 });
 
-// Poppins font
+// Poppins font for headings (ELR Brand)
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["300", "400", "600", "700"],
   variable: "--title-font-family",
 });
 
@@ -39,7 +41,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`body  ${poppins.variable} ${dmSans.variable}`}
+        className={`body  ${poppins.variable} ${inter.variable}`}
         cz-shortcut-listen="false"
       >
         <div className="wrapper ovh">{children}</div>

@@ -42,16 +42,16 @@ const DefaultHeader = () => {
                       <Image
                         width={138}
                         height={44}
-                        src="/images/header-logo2.svg"
-                        alt="Header Logo"
+                        src="/images/header-logo-elr.svg"
+                        alt="ELR - Evan Levine Real Estate"
                       />
                     </Link>
                     <Link className="header-logo logo2" href="/">
                       <Image
                         width={138}
                         height={44}
-                        src="/images/header-logo2.svg"
-                        alt="Header Logo"
+                        src="/images/header-logo-elr.svg"
+                        alt="ELR - Evan Levine Real Estate"
                       />
                     </Link>
                   </div>

@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const About = () => {
   const featureList = [
-    "Find excellent deals",
-    "Friendly host & Fast support",
-    "List your own property",
+    "Curated luxury properties",
+    "Sophisticated client experience",
+    "Prestige market expertise",
   ];
   return (
     <>
