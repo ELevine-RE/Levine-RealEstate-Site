@@ -1,6 +1,7 @@
 "use client";
 import ScrollToTop from "@/components/common/ScrollTop";
 import Aos from "aos";
+import "../builder-registry"; // Import Builder.io component registry
 
 import "aos/dist/aos.css";
 import "swiper/css";
