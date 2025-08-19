@@ -10,17 +10,6 @@ const nextConfig = {
       "global-builtin",
     ],
   },
-  // Builder.io configuration
-  async rewrites() {
-    return [
-      {
-        source: '/builder/:path*',
-        destination: '/api/builder/:path*',
-      },
-    ]
-  },
-  // Enable external packages for Builder.io
-  serverExternalPackages: ['@builder.io/sdk'],
 };
 
 module.exports = nextConfig;

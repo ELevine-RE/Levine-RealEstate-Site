@@ -3,14 +3,14 @@ import React from "react";
 const ContactMeta = () => {
   const contactInfoList = [
     {
-      title: "Prestige Real Estate Services",
-      phone: "+1 (555) 123-4567",
-      phoneLink: "tel:+15551234567",
+      title: "Total Free Customer Care",
+      phone: "+(0) 123 050 945 02",
+      phoneLink: "tel:+012305094502", // Changed phoneLink to tel: URI
     },
     {
-      title: "Connect with Evan Levine",
-      mail: "evan@elr.com",
-      mailLink: "mailto:evan@elr.com",
+      title: "Need Live Support?",
+      mail: "hi@homez.com",
+      mailLink: "mailto:hi@homez.com", // Changed mailLink to direct email address
     },
   ];
 

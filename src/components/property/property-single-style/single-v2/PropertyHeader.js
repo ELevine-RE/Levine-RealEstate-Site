@@ -1,4 +1,4 @@
-import listings from "../../../../data/listings";
+import listings from "@/data/listings";
 import React from "react";
 
 const PropertyHeader = ({id}) => {

@@ -65,52 +65,14 @@ Tag: advanced search, agency, agent, classified, directory, house, listing, prop
 /*=================================
    Theme Based
 ==================================*/
-/* Variables - ELR Brand Colors */
+/* Variables */
 :root {
     --icon-font-family: "Font Awesome 6 Pro";
     --icon-font-family2: "Flaticon";
     --container-width: 1290px;
     --divder-space: 200px;
-
-    /* ELR Brand Color Palette */
-    --primary-color: #63765B;        /* Olive Stone - Primary brand color */
-    --secondary-color: #223233;      /* Forest Ink - Dark accent */
-    --accent-color: #99A78F;         /* Sage Veil - Light accent */
-    --amber-color: #E4C07F;          /* Amber - Warm accent */
-    --linen-color: #F2F1EE;          /* Linen - Light neutral */
-
-    /* Legacy color mappings */
-    --headings-color: #223233;       /* Forest Ink for text */
-    --text-color: #223233;           /* Forest Ink for body text */
-    --bg-color: #F2F1EE;             /* Linen for backgrounds */
-
-    /* Gradient definitions */
-    --gradient-primary: linear-gradient(135deg, #63765B 0%, #99A78F 100%);
-    --gradient-dark: linear-gradient(135deg, #223233 0%, #63765B 100%);
-}
-
-/* ELR Brand: Replace white backgrounds with Linen */
-.bgc-white,
-header.nav-innerpage-style,
-header.nav-homepage-style.sticky,
-.header.innerpage-style,
-.mm-panel,
-.rightside-hidden-bar,
-.lefttside-hidden-bar,
-.advance-search-tab .nav.nav-tabs,
-.advance-search-tab .tab-content,
-.advance-style2 .tab-content,
-.advance-style3 .nav.nav-tabs,
-.advance-style3 .tab-content,
-.advance-style4 .nav.nav-tabs,
-.advance-style4 .tab-content,
-.funfact-style1,
-.list-sidebar-style1,
-.sidebar-widget,
-.mobile-filter-btn,
-.invoice_table,
-.invoice_footer {
-    background-color: var(--linen-color) !important;
+    --headings-color: #181a20;
+    --primary-color: #eb6753;
 }
 
 /* Mixins */
@@ -121,10 +83,10 @@ body {
 }
 
 body {
-    background-color: var(--linen-color);
+    background-color: #ffffff;
     font-size: 14px;
     font-weight: 400;
-    color: var(--text-color);
+    color: var(--headings-color);
     line-height: 26px;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -6746,7 +6708,7 @@ textarea:focus {
 .btn-light-gray:before,
 .btn-transparent:before,
 .btn-transparent2:before {
-    background-color: var(--primary-color);
+    background-color: #ee4c34;
     content: "";
     height: 100%;
     left: -100%;
@@ -7156,7 +7118,7 @@ header.nav-innerpage-style .ace-responsive-menu .sub-menu li {
     transition: all 0.4s ease;
 }
 header.nav-innerpage-style .ace-responsive-menu .sub-menu li:hover {
-    background-color: rgba(99, 118, 91, 0.1);
+    background-color: rgba(235, 103, 83, 0.07);
 }
 header.nav-innerpage-style .ace-responsive-menu .sub-menu a {
     line-height: 40px;
@@ -7205,7 +7167,7 @@ header.nav-innerpage-style .ace-responsive-menu .visible_list a.list-item {
 }
 header.nav-innerpage-style .ace-responsive-menu .megamenu_style a.list-item:hover,
 header.nav-innerpage-style .ace-responsive-menu .visible_list a.list-item:hover {
-    background-color: rgba(99, 118, 91, 0.1);
+    background-color: rgba(235, 103, 83, 0.07);
 }
 @media (max-width: 1399.98px) {
     header.nav-innerpage-style .ace-responsive-menu .megamenu_style a.list-item,
@@ -7291,7 +7253,7 @@ header.nav-homepage-style .ace-responsive-menu .sub-menu li {
     transition: all 0.4s ease;
 }
 header.nav-homepage-style .ace-responsive-menu .sub-menu li:hover {
-    background-color: rgba(99, 118, 91, 0.1);
+    background-color: rgba(235, 103, 83, 0.07);
 }
 header.nav-homepage-style .ace-responsive-menu .sub-menu a {
     color: var(--headings-color);
@@ -7526,7 +7488,7 @@ a.mm-btn.mm-btn_next.mm-listitem__btn.mm-listitem__text {
 
 a.mm-listitem__text:hover,
 a.mm-btn.mm-btn_next.mm-listitem__btn.mm-listitem__text:hover {
-    background-color: rgba(99, 118, 91, 0.1);
+    background-color: rgba(235, 103, 83, 0.07);
     border-left: 2px solid var(--primary-color);
     color: var(--primary-color);
 }
@@ -10070,11 +10032,11 @@ input:focus-visible {
 }
 
 .text-white {
-    color: var(--linen-color);
+    color: #ffffff;
 }
 
 .bgc-white {
-    background-color: var(--linen-color);
+    background-color: #ffffff;
 }
 
 .bgc-transparent {
@@ -10108,7 +10070,7 @@ input:focus-visible {
 }
 
 .text-thm2 {
-    color: var(--primary-color);
+    color: #ee4c34;
 }
 
 .bgc-thm {
@@ -10116,7 +10078,7 @@ input:focus-visible {
 }
 
 .bgc-thm2 {
-    background-color: var(--primary-color);
+    background-color: #ee4c34;
 }
 
 .bgc-f7 {

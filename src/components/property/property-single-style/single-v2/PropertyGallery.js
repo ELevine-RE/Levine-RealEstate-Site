@@ -2,8 +2,7 @@
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
 import Image from "next/image";
-import listings from "../../../../data/listings";
-import { getSafeImageSrc } from "../../../../utils/imageUtils";
+import listings from "@/data/listings";
 
 const images = [
   {
@@ -25,14 +24,14 @@ const PropertyGallery = ({id}) => {
           <div className="sp-img-content mb15-md">
             <div className="popup-img preview-img-1 sp-img">
               <Item
-                original={getSafeImageSrc('/images/listings/listing-single-8.jpg', 'listing')}
-                thumbnail={getSafeImageSrc('/images/listings/listing-single-8.jpg', 'listing')}
+                original={'/images/listings/listing-single-8.jpg'}
+                thumbnail={'/images/listings/listing-single-8.jpg'}
                 width={890}
                 height={510}
               >
                 {({ ref, open }) => (
                   <Image
-                    src={getSafeImageSrc('/images/listings/listing-single-8.jpg', 'listing')}
+                    src={'/images/listings/listing-single-8.jpg'}
                     width={890}
                     height={510}
                     ref={ref}
@@ -57,8 +56,8 @@ const PropertyGallery = ({id}) => {
                     className={`popup-img preview-img-${index + 2} sp-img mb10`}
                   >
                     <Item
-                      original={getSafeImageSrc(image.src, 'listing')}
-                      thumbnail={getSafeImageSrc(image.src, 'listing')}
+                      original={image.src}
+                      thumbnail={image.src}
                       width={270}
                       height={250}
                     >
@@ -70,8 +69,8 @@ const PropertyGallery = ({id}) => {
                           ref={ref}
                           onClick={open}
                           role="button"
-                          src={getSafeImageSrc(image.src, 'listing')}
-                          alt={image.alt || 'Gallery image'}
+                          src={image.src}
+                          alt={image.alt}
                         />
                       )}
                     </Item>

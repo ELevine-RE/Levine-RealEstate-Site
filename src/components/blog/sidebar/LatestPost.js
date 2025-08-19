@@ -2,7 +2,6 @@ import { posts } from "@/data/blogs";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { getSafeImageSrc } from "@/utils/imageUtils";
 
 const LatestPost = () => {
   
@@ -16,12 +15,7 @@ const LatestPost = () => {
           key={index}
         >
           <div className="news-img flex-shrink-0">
-            <Image
-              width={90}
-              height={80}
-              src={getSafeImageSrc(post.image, 'blog')}
-              alt={post.content || 'blog'}
-            />
+            <Image width={90} height={80} src={post.image} alt="blog" />
           </div>
           <div className="news-content flex-shrink-1 ms-3">
             <p className="new-text mb0 fz14">

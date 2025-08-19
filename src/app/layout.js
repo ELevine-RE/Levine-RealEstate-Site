@@ -1,34 +1,34 @@
 "use client";
 import ScrollToTop from "@/components/common/ScrollTop";
 import Aos from "aos";
-import "../../builder-registry";
 
 import "aos/dist/aos.css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "../../public/scss/main.scss";
 import "rc-slider/assets/index.css";
-import { Inter, Poppins } from "next/font/google";
+import { DM_Sans, Poppins } from "next/font/google";
 import { useEffect } from "react";
 
-// Metadata is handled in individual page files since this is a client component
-
-// Inter font for body text (ELR Brand)
-const inter = Inter({
+// DM_Sans font
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["400", "500", "700"],
   variable: "--body-font-family",
 });
 
-// Poppins font for headings (ELR Brand)
+// Poppins font
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["300", "400", "600", "700"],
+  weight: ["300", "400", "500", "600", "700", "800"],
   variable: "--title-font-family",
 });
 
 export default function RootLayout({ children }) {
   useEffect(() => {
     if (typeof window !== "undefined") {
-      import("bootstrap");
+      import("bootstrap/dist/js/bootstrap.bundle.min.js");
     }
   }, []);
   useEffect(() => {
@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`body  ${poppins.variable} ${inter.variable}`}
+        className={`body  ${poppins.variable} ${dmSans.variable}`}
         cz-shortcut-listen="false"
       >
         <div className="wrapper ovh">{children}</div>

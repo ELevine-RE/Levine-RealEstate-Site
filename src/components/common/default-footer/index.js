@@ -19,8 +19,8 @@ const Footer = () => {
                   width={138}
                   height={44}
                   className="mb40"
-                  src="/images/header-logo-elr.svg"
-                  alt="ELR - Evan Levine Real Estate"
+                  src="/images/header-logo.svg"
+                  alt=""
                 />
               </Link>
               <ContactMeta />

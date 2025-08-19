@@ -1,7 +1,0 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="32" height="32" rx="4" fill="#63765b"/>
-  <!-- Letter E -->
-  <path d="M6 8h14v3h-10v4h8v3h-8v6h10v3H6V8z" fill="#f2f1ee"/>
-  <!-- Letter L -->
-  <path d="M22 8v16h8v3H19V8h3z" fill="#f2f1ee"/>
-</svg>

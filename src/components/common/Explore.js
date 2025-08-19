@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getSafeImageSrc } from "@/utils/imageUtils";
 
 const Explore = () => {
   // Array of iconbox data
@@ -39,12 +38,7 @@ const Explore = () => {
         >
           <div className="iconbox-style2 text-center">
             <div className="icon">
-              <Image
-                width={150}
-                height={150}
-                src={getSafeImageSrc(item.icon, 'icon')}
-                alt={item.title || 'icon'}
-              />
+              <Image width={150} height={150} src={item.icon} alt="icon" />
             </div>
             <div className="iconbox-content">
               <h4 className="title">{item.title}</h4>
